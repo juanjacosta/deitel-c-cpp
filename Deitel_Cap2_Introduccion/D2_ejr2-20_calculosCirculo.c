@@ -5,6 +5,12 @@
                círculo. Utilice la constante 3.14159 para PI. Realice 
                cada uno de estos calculos dentro de instrucciones printf, 
                y utilice el especificador de conversion %f.
+
+                Fórmulas:
+ 
+               diametro = 2 * radio;
+               area = pi * (radio^2);
+               circunferencia = diametro * pi
 */
 #include <stdio.h>
 #define PI 3.14159

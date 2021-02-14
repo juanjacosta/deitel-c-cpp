@@ -20,7 +20,7 @@ int main()
 {
     int n1, n2, n3, suma, producto, max, min;
     float promedio = 0.0;
-    n1 = n2 = n3 = suma = producto = max = min =0;
+    n1 = n2 = n3 = suma = producto = max = min = 0;
 
     printf("Escriba tres enteros diferentes: ");
     scanf("%d %d %d", &n1, &n2, &n3);
@@ -29,6 +29,7 @@ int main()
     promedio = suma / 3;
     producto = n1 * n2 * n3;
 
+    // Evalua numero mayor
     max = n1;
     if (n2 > max)
     {
@@ -39,7 +40,8 @@ int main()
     {
         max = n3;
     }
-    
+
+    // Evalua numero menor
     min = n1;
     if (n2 < min)
     {

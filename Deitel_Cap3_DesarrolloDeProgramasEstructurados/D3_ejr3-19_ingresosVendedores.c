@@ -62,7 +62,7 @@ int main()
     while(ventas != -1)
     {
         comision = ventas * porcentaje;
-        salario= basico + comision;
+        salario = basico + comision;
         printf("El salario es: %.2f\n", salario);
 
         printf("\nIntroduzca las ventas en pesos (-1 para terminar): ");

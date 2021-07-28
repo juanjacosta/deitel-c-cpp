@@ -22,6 +22,7 @@ int main()
     printf("Valor de a: %d\n", a);
     printf("Posdecremento: %d\n", a--); // Utiliza el valor actual de 'a' en la expresión y después decrementa
     printf("Valor de a: %d\n", a);
-
+    printf("=================================================\n");
+    
     return 0;
 }

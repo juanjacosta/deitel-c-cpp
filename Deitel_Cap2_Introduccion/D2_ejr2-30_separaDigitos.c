@@ -12,6 +12,9 @@
                42139 
                el programa debe imprimir
                4   2   1   3   9
+
+               Ejm:
+               https://www.youtube.com/watch?v=8aKFU4GRjHA
 */
 
 #include <stdio.h>
@@ -23,8 +26,7 @@ int main()
     printf("Ingrese numero de 5 digitos: ");
     scanf("%d", &num);
 
-    
+    printf("%d   %d   %d   %d   %d\n", (num%100000)/10000, (num%10000)/1000, (num%1000)/100, (num%100)/10, num%10);
 
-    printf("%d\n", num);
     return 0;
 }

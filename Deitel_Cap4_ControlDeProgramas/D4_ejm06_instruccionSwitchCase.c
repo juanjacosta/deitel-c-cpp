@@ -1,7 +1,6 @@
 /*
     Programa: D4_ejm04_sumarEnterosPares.c
     Propósito: Mostrar el uso de la instruccion de seleccion multiple switch...case 
-    Fecha    : 26/08/2019
 
     NOTA: EOF em linux-> Ctrl d
  */

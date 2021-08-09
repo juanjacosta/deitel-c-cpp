@@ -19,7 +19,7 @@ int main()
     while ((scanf("%d", &side)) != EOF)
     {
         printf("Caracter: ");
-        scanf(" %c", &character);
+        scanf(" %c", &character);       // Adicionar espacio antes de %c https://stackoverflow.com/questions/20306659/the-program-doesnt-stop-on-scanfc-ch-line-why
         // character = getchar();
 
         printSquare(side, character);

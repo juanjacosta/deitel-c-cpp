@@ -1,34 +1,33 @@
 #include <stdio.h>
-#define TAM 10
 
-long fibonacci(long n);
+void printSquare(int s, char c);
 
 int main()
 {
-    printf("====================================\n");
-    printf("\tFinoacci\n");
-    printf("====================================\n");
+    int side;
+    char character;
 
-    int i;
+    printf("Side: ");
+    scanf("%d", &side);
 
-    for (i = 0; i <= TAM; i++){
-        printf("Fibonacci %d = %ld\n", i, fibonacci(i));
-    }
+    printf("character: ");
+    // scanf("%c", &character);
+    character = getchar();
+
+    printSquare(side, character);
     
     return 0;
 }
 
-long fibonacci(long n)
+void printSquare(int s, char c)
 {
-    // if (n == 0 ){
-    //     return 0;
-    // }
-    // else if (n == 1){
-    //     return 1;
-    if (n == 0 || n == 1){
-        return n;
-    }
-    else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
+    int i, j;
+
+    for (i = 1; i <= s; i++){
+
+        for (j = 1; j <= s; j++){
+            printf("%c", c);
+        }
+        printf("\n");
     }
 }

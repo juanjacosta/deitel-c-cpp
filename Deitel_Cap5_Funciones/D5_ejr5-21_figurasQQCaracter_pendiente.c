@@ -3,6 +3,9 @@
     Propósito: Utilice técnicas similares a las empleadas en los ejercicios 5.19 e
                5.20 para producir un programa que grafique un número variado de 
                figuras.
+
+               OBS: En el triángulo, el gráfico es de un triángulo isóceles (lados
+                    iguales) teniendo en cuenta el espaciamento en la vertical.
 */
 
 #include <stdio.h>
@@ -110,7 +113,7 @@ void drawTriangle(void)
     int base, height, i, j, k;
     char caracter;
 
-    printf("### Triangle ###\n");
+    printf("### Isosceles Triangle ###\n");
     printf("Base: ");
     scanf("%d", &base);
 
@@ -132,6 +135,10 @@ void drawTriangle(void)
         for (j = 1; j <= i; j++)
         {
             printf("%c", caracter);
+
+            if (j != 1){
+                printf("%c", caracter);
+            }
         }
         printf("\n");
     }

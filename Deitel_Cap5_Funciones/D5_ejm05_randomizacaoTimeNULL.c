@@ -14,6 +14,10 @@ int main()
     int fq4 = 0;
     int fq5 = 0;
     int fq6 = 0;
+    
+    printf("=======================================\n");
+    printf("\tSimulacion tiro de dados\n");
+    printf("========================================\n");
 
     srand(time(NULL));
 
@@ -47,6 +51,7 @@ int main()
     }
 
     printf("%7s%14s\n", "Cara", "Frecuencia");
+    printf("========================================\n");
     printf("    1%15d\n", fq1);
     printf("    2%15d\n", fq2);
     printf("    3%15d\n", fq3);

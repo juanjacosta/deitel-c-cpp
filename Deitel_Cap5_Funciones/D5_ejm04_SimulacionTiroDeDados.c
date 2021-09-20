@@ -57,7 +57,7 @@ int main()
 
   // Despliega los resultados en forma tabular
 
-  printf("%10s%30s\n", "Cara", "Frecuencia");
+  printf("%10s%15s\n", "Cara", "Frecuencia");
   printf("========================================\n");
   
   printf("\t1%15d\n",fq1);  

@@ -24,10 +24,14 @@
  */
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 int main(void)
 {
     int salaries[9] = {200, 300, 400, 500, 600, 700, 800, 900, 1000};
+    char *range1 = "$200 - 299";
+    char *range3 = "$400 - 499";
 
     int grosses_sales = 0;       // ventas brutas
     int salesperson_grosses = 0; // ingresos brutos del vendedor
@@ -46,7 +50,8 @@ int main(void)
     if ((salesperson_grosses >= salaries[0]) && (salesperson_grosses < salaries[1]))
     {
         range = 'a';
-        length_range = "$200 - 299";
+        length_range = malloc(strlen(range1) + 1);
+        strcpy(length_range, range1);
     }
     else if ((salesperson_grosses >= salaries[1]) && (salesperson_grosses < salaries[2]))
     {
@@ -55,6 +60,12 @@ int main(void)
     else if ((salesperson_grosses >= salaries[2]) && (salesperson_grosses < salaries[3]))
     {
         range = 'c';
+        length_range = malloc(strlen(range3) + 1);
+        if (length_range == NULL)
+        {
+            return 1;
+        }
+        strcpy(length_range, range3);
     }
     else if ((salesperson_grosses >= salaries[3]) && (salesperson_grosses < salaries[4]))
     {

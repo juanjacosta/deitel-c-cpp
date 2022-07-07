@@ -11,7 +11,7 @@
 #include <stdio.h>
 #define SIZE_R 2
 #define SIZE_C 5
-#define SIZE (2 * 5)
+#define SIZE (SIZE_R * SIZE_C)
 
 void printArray(int a[][SIZE_C]);
 void printColumnFormat(int a[], int s);

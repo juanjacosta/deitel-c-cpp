@@ -6,3 +6,4 @@
 
 # Windows files
 Thumbs.db
+*/*.exe

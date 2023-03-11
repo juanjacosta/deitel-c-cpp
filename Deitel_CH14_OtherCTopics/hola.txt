@@ -1,0 +1,4 @@
+// https://www.atareao.es/tutorial/terminal/redirigir-entrada-y-salida-en-linux/
+hola
+
+

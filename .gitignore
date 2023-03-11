@@ -1,9 +1,16 @@
 # vscode files
-*/.vscode
+**/.vscode
 
 # Temporary files
 *.tmp
 
 # Windows files
-Thumbs.db
-*/*.exe
+**/Thumbs.db
+.DS_Store
+!/**/.DS_Store
+
+
+# Files without extension
+*
+!/**/
+!*.*

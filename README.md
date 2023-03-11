@@ -1,2 +1,2 @@
 # deitel-c-cpp-java
-Examples and exercises from the fourth edition of the book "How to program in C/C++ and Java". By Harvey and Paul Deitel.
+Examples and exercises from the eight edition of the book "C How to program, with an introduction to C/C++". By Paul Deitel and Harvey.

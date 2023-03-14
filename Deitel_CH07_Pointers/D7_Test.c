@@ -1,20 +1,37 @@
 #include <stdio.h>
 
+int cubeByValue(int n);
+void cubeByReference(int *nPtr);
+
 int main(void)
 {
-    int a = 7;
-    int *aPtr = &a;
+    int number = 5;
+    int num;
 
-    printf("=====================================\n");
-    printf("\tOperadores de Punteros\n");
-    printf("=====================================\n");
+    printf("========================================================\n");
+    printf("\tPassing Arguments value and by reference\n");
+    printf("========================================================\n");
+    printf("The original value of number is %d\n\n", number);
 
-    printf("Address of a: %p\n", &a);
-    printf("Valor of a: %p\n", aPtr);
+    // pass number by value to cubeByValue
+    num = cubeByValue(number);
+    printf("Number by value: %d\n", num);
+
+    printf("\nValue of number: %d\n\n", number);
+
+    // pass number by reference to cubeByReference
+    cubeByReference(&number);
+    printf("Number by reference: %d\n", number);
+
     puts("");
-    printf("Valor of a: %d\n", a);
-    printf("Valor of *aPtr: %d\n", *aPtr);
-    printf("\nMostrando que * e & son complementos uno del otro:\n");
-    printf("&*aPtr = %p\n*&aPtr = %p\n", &*aPtr, *&aPtr);
-    printf("=====================================\n");
+}
+
+int cubeByValue(int n)
+{
+    return n * n * n;
+}
+
+void cubeByReference(int *nPtr)
+{
+    *nPtr = *nPtr * *nPtr * *nPtr;
 }

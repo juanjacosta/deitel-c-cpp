@@ -9,8 +9,10 @@
 .DS_Store
 !/**/.DS_Store
 
-
 # Files without extension
 *
 !/**/
 !*.*
+
+# Examples Folder
+Examples8ed/

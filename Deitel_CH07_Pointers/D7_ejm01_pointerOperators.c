@@ -10,7 +10,7 @@ int main(void)
     printf("=====================================\n");
 
     printf("Address of a: %p\n", &a);
-    printf("Valor of a: %p\n", aPtr);
+    printf("Valor of aPtr: %p\n", aPtr);
     puts("");
     printf("Valor of a: %d\n", a);
     printf("Valor of *aPtr: %d\n", *aPtr);

@@ -15,21 +15,21 @@
 #include <stdio.h>
 #include <ctype.h>
 
-void convierteAMayusculas(char *ptrS);
+void convertToUppercase(char *ptrS);
 
 int main()
 {
     char cadena[] = "caracteres y $32.98";
     printf("la cadena antes de la conversion es: %s\n", cadena);
 
-    convierteAMayusculas(cadena); // com um array não precisa passar o &
+    convertToUppercase(cadena); // com um array não precisa passar o &
 
     printf("La cadena despues de la conversion es: %s\n", cadena);
 
     return 0;
 }
 
-void convierteAMayusculas(char *ptrS)
+void convertToUppercase(char *ptrS)
 {
     while (*ptrS != '\0')
     {

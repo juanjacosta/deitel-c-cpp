@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    int x = 5;
+    int x;
     int y;
-    const int *const ptrX = &x;
+    int *const ptrX = &x;
 
-    *ptrX = 7; // erro ao tratar de asignar um novo valor
+    *ptrX = 7;
     ptrX = &y; // erro ao tratar de asignar um novo endereço
 }

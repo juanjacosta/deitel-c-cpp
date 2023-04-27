@@ -10,7 +10,7 @@ void printCharacters(const char *ptrS);
 
 int main()
 {
-    char cadena[] = "imprime los caracteres de una cadena";
+    char cadena[] = "imprime caracteres de una cadena";
 
     printf("La cadena es: \n");
     printCharacters(cadena);

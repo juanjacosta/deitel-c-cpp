@@ -3,18 +3,10 @@
 
 int main(void)
 {
-    char c[] = "teste de juan";
-    char *cPtr = &c;
+    int x = 5;
+    int y;
+    const int *const ptrX = &x;
 
-    printf("%s\n", c);
-
-    while (*cPtr != '\0')
-    {
-        if (islower(*cPtr))
-        {
-            *cPtr = toupper(*cPtr);
-        }
-        cPtr++;
-    }
-    printf("%s\n", c);
+    *ptrX = 7;
+    ptrX = &y;
 }

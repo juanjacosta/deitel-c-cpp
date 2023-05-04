@@ -11,7 +11,7 @@
                por referencia; la direccion de cada elemento del arreglo se pasa de manera
                explicita.
 
-               Ejm Deitel - Cap 7 - Ejm 7.15 - pg 247
+               Ejm Deitel - Cap 7 - Ejm 7.15 - pg 322
  */
 #include <stdio.h>
 #define TAM 10

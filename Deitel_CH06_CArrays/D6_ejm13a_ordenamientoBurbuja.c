@@ -3,7 +3,7 @@
 void printArray(int a[], size_t t);
 void bubbleSorting(int a[], size_t t);
 
-int main(void)
+int main()
 {
     int array[] = {2, 6, 4, 8, 10, 12, 89, 68, 45, 37, 46, 54, 21};
     int tam = sizeof(array) / sizeof(array[0]);
@@ -11,7 +11,7 @@ int main(void)
     printf("Size array: %d\n", tam);
     printArray(array, tam);
     puts("Arreglo Ordenado:");
-    burbleSorting(array, tam);
+    bubbleSorting(array, tam);
     printArray(array, tam);
 }
 

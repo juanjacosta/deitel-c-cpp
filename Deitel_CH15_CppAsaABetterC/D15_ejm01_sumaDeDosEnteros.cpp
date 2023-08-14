@@ -2,7 +2,6 @@
   Programa : D15_ejm01_sumaDeDosEnteros.cpp
   Proposito: Mostrar las diferencias de la sintaxis C++ respecto a C con un programa 
              sencillo que sume dos numeros enteros.
-  Fecha    : 18/08/2019
  */
 
 #include <iostream>

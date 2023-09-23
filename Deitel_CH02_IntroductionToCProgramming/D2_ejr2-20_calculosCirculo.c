@@ -15,7 +15,7 @@
 #include <stdio.h>
 #define PI 3.14159
 
-int main()
+int main(void)
 {
     float radio, diametro, circunferencia, area;
     printf("==========================================\n");

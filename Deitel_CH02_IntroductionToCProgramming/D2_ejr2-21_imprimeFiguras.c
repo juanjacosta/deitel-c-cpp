@@ -15,7 +15,7 @@
 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     printf("*********               ***             *               *\n");
     printf("*       *             *     *          ***            *   *\n");

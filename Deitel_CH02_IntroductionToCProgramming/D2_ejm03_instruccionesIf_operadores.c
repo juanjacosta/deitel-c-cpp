@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int num1, num2;
 

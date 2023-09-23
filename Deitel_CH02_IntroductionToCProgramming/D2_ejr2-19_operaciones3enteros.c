@@ -16,7 +16,7 @@
 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int n1, n2, n3, suma, producto, max, min;
     float promedio = 0.0;

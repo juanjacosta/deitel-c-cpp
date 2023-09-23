@@ -9,7 +9,7 @@
 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int n1 = 0, n2 = 0;
 

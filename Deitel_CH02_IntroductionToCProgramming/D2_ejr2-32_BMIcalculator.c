@@ -17,7 +17,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int mode, heightMt, weightMt;
     double heightSt, weightSt, feet, inches, meters, BMI;

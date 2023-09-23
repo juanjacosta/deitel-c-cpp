@@ -5,7 +5,7 @@
  */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     printf("=================================================\n");
     printf("\tTest Programming Visual Studio C/C++\n");

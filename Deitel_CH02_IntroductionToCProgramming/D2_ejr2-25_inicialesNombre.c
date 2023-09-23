@@ -7,7 +7,7 @@
 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     printf("J        J\n");
     printf("J        J\n");

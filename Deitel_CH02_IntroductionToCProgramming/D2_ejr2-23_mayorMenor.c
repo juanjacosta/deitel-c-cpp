@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int n1, n2, n3, n4, n5, max, min;
 

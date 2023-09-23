@@ -7,7 +7,7 @@
 #include <stdio.h>
 //#define _CRT_SECURE_NO_WARNINGS
 
-int main()
+int main(void)
 {
     int num1, num2, multiplo;
     num1 = num2 = multiplo = 0;

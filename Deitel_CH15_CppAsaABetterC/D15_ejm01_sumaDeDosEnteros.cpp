@@ -1,31 +1,27 @@
 /*
   Programa : D15_ejm01_sumaDeDosEnteros.cpp
-  Proposito: Mostrar las diferencias de la sintaxis C++ respecto a C con un programa 
-             sencillo que sume dos numeros enteros.
+  Proposito: Mostrar las diferencias de la sintaxis C++ respecto a C con un programa sencillo que sume dos numeros enteros.
  */
 
 #include <iostream>
 
 int main()
 {
-  int entero1;
-
   std::cout << "==========================================" << std::endl;
   std::cout << "\tSuma de enteros " << std::endl;
   std::cout << "==========================================" << std::endl;
-  std::cout << "Introduzca el primer entero: ";
-  std::cin >> entero1;
+  std::cout << "Enter first integer: ";
+  int number1;
+  std::cin >> number1;
 
-  int entero2, suma;
+  int number2, sum;
 
-  std::cout << "Introduzca el segundo entero: ";
-  std::cin >> entero2;
+  std::cout << "Enter second integer: ";
+  std::cin >> number2;
 
-  suma = entero1 + entero2;
+  sum = number1 + number2;
 
-  std::cout << "La suma es: " << suma << std::endl;
+  std::cout << "La suma es: " << sum << std::endl;
 
   std::cout << "==========================================" << std::endl;
-
-  return 0;
 }

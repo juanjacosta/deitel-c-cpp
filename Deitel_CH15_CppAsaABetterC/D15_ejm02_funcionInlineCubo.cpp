@@ -9,26 +9,26 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-inline double cubo(const double s)
+inline double cube(const double side)
 {
-  return s * s * s;
+  return side * side * side;
 }
 
 int main()
 {
-  double lado;
+  double sideValue;
 
   cout << "==================================================" << endl;
-  cout << "\tFuncion Inline cubo()" << endl;
+  cout << "\tFuncion Inline cube()" << endl;
   cout << "==================================================" << endl;
 
   for (int i = 1; i <= 3; i++)
   {
-    cout << "Introduzca la longitud de un lado del cubo: ";
-    cin >> lado;
+    cout << "Enter the side length of the cube: ";
+    cin >> sideValue;
 
-    cout << "El volumen del cubo con lado " << lado << " es "
-         << cubo(lado) << endl;
+    cout << "Volumen of the cube with side " << sideValue << ": "
+         << cube(sideValue) << endl;
   }
 
   cout << "==================================================" << endl;

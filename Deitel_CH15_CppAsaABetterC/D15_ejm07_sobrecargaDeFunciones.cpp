@@ -1,25 +1,21 @@
 /*
  Programa : ejm_07_sobrecargaDeFunciones.cpp
  Proposito: Mostrar el uso de funciones sobrecargadas
- Fecha    : 19/08/2019
  */
 
 #include <iostream>
+using namespace std;
 
-using std::cout;
-using std::endl;
+int square(int x) { return x * x; }
+double square(double y) { return y * y; }
 
-int cuadrado(int x) {return x * x;}
-double cuadrado(double y) {return y * y;}
+int main() {
+   cout << "============================================" << endl;
+   cout << "\tSobrecarga de Funciones" << endl;
+   cout << "============================================" << endl;
+   cout << "El cuadrado del entero 7 es  : " << square(7)
+        << "\nEl square del double 7.5 es  : " << square(7.5) << endl;
+   cout << "============================================" << endl;
 
-int main()
-{
-  cout << "============================================" << endl;
-  cout << "\tSobrecarga de Funciones" << endl;
-  cout << "============================================" << endl;
-  cout << "El cuadrado del entero 7 es  : " << cuadrado(7) 
-       << "\nEl cuadrado del double 7.5 es: " << cuadrado(7.5) << endl;
-  cout << "============================================" << endl;
-
-  return 0;
+   return 0;
 }

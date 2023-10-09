@@ -7,8 +7,8 @@
 
 using namespace std;
 
-int cuadradoPorValor(int);
-int cuadradoPorReferencia(int &);
+int squareByValue(int);
+void squareByReference(int &);
 
 int main()
 {
@@ -18,36 +18,33 @@ int main()
   cout << "Llamadas por Valor y por Referencia" << endl;
   cout << "\tx = " << x << "; y = " << y << endl;
 
-  cout << "Antes de cuadradoPorValor" << endl;
+  cout << "Before squareByValue" << endl;
   cout << "x = " << x << endl;
 
-  cout << "Valor devuelto por cuadradoPorValor" << endl;
-  cout << "x = " << cuadradoPorValor(x) << endl;
+  cout << "Value returned by squareByValue" << endl;
+  cout << "x = " << squareByValue(x) << endl;
 
-  cout << "Despues de cuadradoPorValor" << endl;
+  cout << "After squareByValue" << endl;
   cout << "x = " << x << endl;
   cout << "============================================" << endl;
 
-  cout << "Antes de cuadradoPorReferencia" << endl;
+  cout << "Before squareByReference" << endl;
   cout << "y = " << y << endl;
 
-  cout << "Valor devuelto por cuadradoPorReferencia" << endl;
-  cout << "y = " << cuadradoPorReferencia(y) << endl;
-
-  cout << "Despues de cuadradoPorReferencia " << endl;
+  cout << "After squareByReference" << endl;
+  squareByReference(y);
   cout << "y = " << y << endl;
   cout << "============================================" << endl;
 
   return 0;
 }
 
-int cuadradoPorValor(int number)
+int squareByValue(int number)
 {
   return number *= number;
 }
 
-int cuadradoPorReferencia(int &numberRef)
+void squareByReference(int &numberRef)
 {
-  return numberRef *= numberRef;
-  
+  numberRef *= numberRef;
 }

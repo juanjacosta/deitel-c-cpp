@@ -16,13 +16,13 @@ int main()
 {
   double length, width;
 
-  cout << "Enter Dimensions of Rectangle" << endl;
+  cout << "Enter Dimensions of Rectangle in meters" << endl;
   cout << "Length: ";
   cin >> length;
   cout << "Width: ";
   cin >> width;
 
-  cout << "Area: " << rectArea(length, width) << endl;
+  cout << "Area: " << rectArea(length, width) << " m^2" << endl;
 
   return 0;
 }

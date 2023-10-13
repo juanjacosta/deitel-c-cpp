@@ -12,8 +12,7 @@ using namespace std;
 void outputVector (const vector<int> &);
 void inputVector (vector<int> &);
 
-int
-main ()
+int main ()
 {
   cout << "Class Template vector" << endl;
 
@@ -94,8 +93,7 @@ main ()
     }
 }
 
-void
-outputVector (const vector<int> &array)
+void outputVector (const vector<int> &array)
 {
   size_t i;
 
@@ -114,8 +112,7 @@ outputVector (const vector<int> &array)
       cout << endl;
     }
 }
-void
-inputVector (vector<int> &array)
+void inputVector (vector<int> &array)
 {
   for (size_t i = 0; i < array.size (); ++i)
     {

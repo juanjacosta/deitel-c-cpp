@@ -9,16 +9,14 @@
 using namespace std;
 
 template <class S>
-void
-swapFunction (S &param1, S &param2)
+void swapFunction (S &param1, S &param2)
 {
   S tmp = param1;
   param1 = param2;
   param2 = tmp;
 }
 
-int
-main ()
+int main ()
 {
   int num1 = 7, num2 = 4;
   char c1 = 'a', c2 = 'u';

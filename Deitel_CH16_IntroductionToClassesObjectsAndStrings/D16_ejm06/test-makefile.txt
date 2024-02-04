@@ -1,0 +1,12 @@
+CC=g++
+CFLAGS= -c -std=c++17 -o0
+all:D16_ejm06_implementacao.o D16_ejm06_main.o
+
+D16_ejm06_implementacao.o:D16_ejm06_implementacao.cpp
+	$(CC) $(CFLAGS) -o $@ $^ 
+
+D16_ejm06_main.o:D16_ejm06_main.cpp
+	$(CC) $(CFLAGS) -o $@ $^
+
+
+OBS: Neste arquivo falta a regra para juntar todos os arquivos objeto.

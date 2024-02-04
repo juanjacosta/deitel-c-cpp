@@ -7,7 +7,7 @@
       "args": [
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
-        // "-g",
+        "-g",
         "${file}",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}"
@@ -15,9 +15,7 @@
       "options": {
         "cwd": "${fileDirname}"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true

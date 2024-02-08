@@ -1,6 +1,7 @@
 # vscode files
 **/.vscode
 
+
 # Temporary files
 *.tmp
 
@@ -17,3 +18,5 @@
 
 # Examples Folder
 Examples8ed/
+Deitel_CH07_Pointers/D7_ejm01_pointerOperators.dSYM/Contents/Info.
+*.plist

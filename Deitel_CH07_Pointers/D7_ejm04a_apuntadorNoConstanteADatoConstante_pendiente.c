@@ -1,23 +1,24 @@
 #include <stdio.h>
 
-void printString(const char *sPtr);
+void printString (const char *sPtr);
 
-int main(void)
+int main (void)
 {
   char string[20];
-  printf("Enter a string: ");
-  scanf("%s", string);
-  printString(string);
-  puts("");
+  printf ("Enter a string: ");
+  scanf ("%s", string);
+  printString (string);
+  puts ("");
 }
 
-void printString(const char *sPtr)
+void printString (const char *sPtr)
 {
   for (; *sPtr != '\0'; ++sPtr)
-  // while (*sPtr != '\0')
-  {
-    printf("%c", *sPtr);
-  }
+    // while (*sPtr != '\0')
+    {
+      printf ("%c", *sPtr);
+      // puts ("%c", *sPtr); // puts gera erro com pointers
+    }
   sPtr++;
 }
 

@@ -1,20 +1,20 @@
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 
-int main(void)
+int main (void)
 {
-  char c[] = "teste de lowercase to uppercase";
+  char c[] = "test lowercase to uppercase";
   char *cPtr = c; // & not necessary in arrays
 
-  printf("%s\n", c);
+  printf ("%s\n", c);
 
   while (*cPtr != '\0')
-  {
-    if (islower(*cPtr))
     {
-      *cPtr = toupper(*cPtr);
+      if (islower (*cPtr))
+        {
+          *cPtr = toupper (*cPtr);
+        }
+      cPtr++;
     }
-    cPtr++;
-  }
-  printf("%s\n", c);
+  printf ("%s\n", c);
 }

@@ -1,25 +1,27 @@
 #include <stdio.h>
+#include <string.h>
 
 void printString (const char *sPtr);
 
 int main (void)
 {
-  char string[20];
+  char arr[20];
   printf ("Enter a string: ");
-  scanf ("%s", string);
-  printString (string);
+  scanf ("%s", arr);
+  printString (arr);
   puts ("");
 }
 
 void printString (const char *sPtr)
 {
   for (; *sPtr != '\0'; ++sPtr)
-    // while (*sPtr != '\0')
+    //   // while (*sPtr != '\0')
     {
       printf ("%c", *sPtr);
-      // puts ("%c", *sPtr); // puts gera erro com pointers
+      //     // puts ("%c", *sPtr); // puts gera erro com pointers
     }
   sPtr++;
+  // getline (&sPtr, 20, stdin);
 }
 
 // 7.5.2 pg 318 - PENDIENTE imprimir palabras com espaços

@@ -1,12 +1,13 @@
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 
-int main(void)
+int main (void)
 {
-    int x = 5;
-    int y;
-    const int *const ptrX = &x;
+  int x = 5;
+  int y;
+  const int *const ptrX = &x;
 
-    *ptrX = 7; // erro ao tratar de asignar um novo valor
-    ptrX = &y; // erro ao tratar de asignar um novo endereço
+  printf ("%d\n", *ptrX);
+  //   *ptrX = 7; // erro ao tratar de asignar um novo valor
+  //   ptrX = &y; // erro ao tratar de asignar um novo endereço
 }

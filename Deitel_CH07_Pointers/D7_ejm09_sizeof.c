@@ -19,32 +19,30 @@
                tamanho en bytes de un arreglo (o de cualquier otro
                tipo de dato) durante la compilacion de un programa.
 
-               Ejm Deitel - Cap 7 - Ejm 7.16 - pg 250
-    Fecha    : 24/09/2019
+               Ejm Deitel - Cap 7 - Ejm 7.16 - pg 325
  */
 
 #include <stdio.h>
+#define SIZE 20
 
-// size_t getSize(float *ptr);
-size_t getSize(double *ptr);
+size_t getSize (float *ptr);
+// size_t getSize (double *ptr);
 
-int main()
+int main ()
 {
-    // float array[20];
-    double array[22];
+  float array[SIZE];
+  //   double array[SIZE];
 
-    int tam = sizeof(array) / sizeof(array[0]);
+  int tam = sizeof (array) / sizeof (array[0]);
 
-    printf("Numero de bytes totales del arreglo: %d\n", sizeof(array));
-    printf("Numero de bytes del 1er elemento del arreglo: %d\n", getSize(array));
-    printf("Tamanho do array: %d elementos\n", tam);
+  printf ("Numero de bytes totales del arreglo: %d\n", sizeof (array));
+  printf ("Numero de bytes del 1er elemento del arreglo: %d\n",
+          getSize (array));
+  printf ("Tamanho do array: %d elementos\n", tam);
 
-    return 0;
+  return 0;
 }
 
 // Retorna el número de bytes em memória del 1er elemento del arreglo
-// size_t getSize(float *ptr)
-size_t getSize(double *ptr)
-{
-    return sizeof(*ptr);
-}
+size_t getSize (float *ptr) { return sizeof (ptr); }
+// size_t getSize (double *ptr) { return sizeof (*ptr); }

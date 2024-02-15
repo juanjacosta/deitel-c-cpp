@@ -1,6 +1,10 @@
 /*
  @file D16_ejr16-11_main.cpp
  @brief Exercise validation
+
+ Para compilar todos os arquivos
+
+ $ g++ ClassDefinition.cpp main.cpp  -o main
 */
 
 #include "D16_ejr16-11_GradeBook.h"

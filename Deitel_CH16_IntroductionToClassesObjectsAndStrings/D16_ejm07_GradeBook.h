@@ -1,5 +1,6 @@
 /*
  @file D16_ejm07_GradeBook.h
+ @Fig. 16.15
  @brief GradeBook class definition presents the public interface of the class.
  Member-function definitions appear in GradeBook.cpp
 */

@@ -1,5 +1,6 @@
 /*
  @file D16_ejm07_GradeBook.cpp
+ @Fig. 16.16
  @brief Implementations of the GradeBook member-function definitions: the
  setCourseName function performs validation.
 */

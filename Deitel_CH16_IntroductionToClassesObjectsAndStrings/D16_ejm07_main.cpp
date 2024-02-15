@@ -1,5 +1,6 @@
 /*
  @file D16_ejm07_main.cpp
+ @Fig. 16.17
  @brief Create and manipulate a GradeBook object; illustrate validation.
 */
 
